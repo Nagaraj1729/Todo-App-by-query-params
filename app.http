@@ -1,0 +1,40 @@
+GET http://localhost:3000/todos/
+###
+
+
+GET http://localhost:3000/todos/1/
+###
+
+
+
+GET http://localhost:3000/agenda/?date=2020-09-22
+###
+
+
+POST http://localhost:3000/todos/
+Content-Type : application/json
+
+{
+ "id" : 8,
+ "todo": "my todo",
+ "priority": "LOW",
+ "status": "TO DO",
+ "category": "HOME",
+ "dueDate": "2021-02-22"
+}
+###
+
+
+PUT http://localhost:3000/todos/3/
+Content-Type : application/json
+
+{
+ "dueDate": "2021-12-12"
+}
+###
+
+DELETE http://localhost:3000/todos/8/
+###
+
+
+
